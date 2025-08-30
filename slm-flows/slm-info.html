@@ -214,8 +214,7 @@
         </section>
 
         <footer class="text-center mt-16 pt-8 border-t border-gray-300">
-            <p class="text-lg font-bold brand-blue">A Call for Discussion</p>
-            <p class="text-gray-600 max-w-2xl mx-auto">The shift to SLM-first architectures is not just a technical refinement but a necessary step towards a more sustainable, accessible, and economically viable future for Agentic AI. Join the conversation.</p>
+           
         </footer>
 
     </div>
@@ -332,7 +331,7 @@ new Chart(performanceChartCtx, {
 const replacementRawLabels = ['MetaGPT (Software Company Sim)', 'Cradle (General Computer Control)', 'Open Operator (Workflow Automation)'];
 const replacementChartCtx = document.getElementById('replacementChart').getContext('2d');
 new Chart(replacementChartCtx, {
-    type: 'doughnut',
+    type: 'bar',
     data: {
         labels: replacementRawLabels.map(label => wrapLabels(label, 16)),
         datasets: [{
@@ -369,6 +368,7 @@ new Chart(replacementChartCtx, {
 </script>
 </body>
 </html>
+
 
 
 
