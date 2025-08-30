@@ -341,33 +341,34 @@ new Chart(replacementChartCtx, {
             hoverOffset: 4
         }]
     },
-    options: {
-        ...sharedChartOptions,
-        cutout: '60%',
-        plugins: {
-            ...sharedChartOptions.plugins,
-            tooltip: {
-                ...sharedChartOptions.plugins.tooltip,
-                callbacks: {
-                    ...sharedChartOptions.plugins.tooltip.callbacks,
-                    label: function(context) {
-                        let label = context.dataset.label || '';
-                        if (label) {
-                            label += ': ';
-                        }
-                        if (context.parsed !== null) {
-                            label += context.parsed + '%';
-                        }
-                        return label;
-                    }
-                }
-            }
-        }
-    }
+   ###options: {
+        ###...sharedChartOptions,
+       ###cutout: '60%',
+        ###plugins: {
+            ###...sharedChartOptions.plugins,
+            ###tooltip: {
+                ###...sharedChartOptions.plugins.tooltip,
+                ###callbacks: {
+                    ###...sharedChartOptions.plugins.tooltip.callbacks,
+                    ###label: function(context) {
+                        ###let label = context.dataset.label || '';
+                        ###if (label) {
+                            ###label += ': ';
+                        ###}
+                       ### if (context.parsed !== null) {
+                            ###label += context.parsed + '%';
+                      ###  }
+                       ### return label;
+                    ###}
+                ###}
+            ###}
+        ###}
+    ###}
 });
 </script>
 </body>
 </html>
+
 
 
 
